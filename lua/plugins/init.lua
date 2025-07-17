@@ -27,4 +27,5 @@ return require("lazy").setup({
     { import = "plugins.training" },
     { import = "plugins.which_key" },
     { import = "plugins.gitsigns" },
+    { import = "plugins.lsp_progress" },
 })
