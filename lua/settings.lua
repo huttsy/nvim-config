@@ -14,10 +14,6 @@ o.clipboard = "unnamedplus"
 o.updatetime = 300 -- how long (ms) before CursorHold fires
 o.timeoutlen = 500 -- how long (ms) to wait for mapped sequence
 
--- center cursor in window
-o.scrolloff = 8
-o.sidescrolloff = 8
-
 -- persistent undo and no swap/backup clutter
 o.swapfile = false
 o.backup = false

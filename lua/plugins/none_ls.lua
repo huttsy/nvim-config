@@ -20,6 +20,7 @@ return {
                     }),
                     require("none-ls.diagnostics.eslint_d"),
                     require("none-ls.formatting.eslint"),
+                    require("none-ls.code_actions.eslint_d"),
                     -- Python formatting
                     null_ls.builtins.formatting.black.with({ extra_args = { "--fast" } }),
                     -- Lua formatting via stylua
