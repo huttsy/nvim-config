@@ -1,7 +1,7 @@
 return {
     {
         "nvimtools/none-ls.nvim",
-        dependencies = { "nvim-lua/plenary.nvim" },
+        dependencies = { "nvim-lua/plenary.nvim", "nvimtools/none-ls-extras.nvim" },
         event = "BufReadPre",
         config = function()
             local null_ls = require("null-ls")
@@ -18,6 +18,8 @@ return {
                             "markdown",
                         },
                     }),
+                    require("none-ls.diagnostics.eslint_d"),
+                    require("none-ls.formatting.eslint"),
                     -- Python formatting
                     null_ls.builtins.formatting.black.with({ extra_args = { "--fast" } }),
                     -- Lua formatting via stylua
